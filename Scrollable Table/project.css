@@ -1,0 +1,90 @@
+
+body {
+	background-color: #005073;
+	color: white;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.centered {
+	text-align: center;
+}
+
+.contentWrapper2 {
+	padding: 30px;
+}
+
+.contentTable {
+	max-height: 200px;
+	overflow-y: scroll;
+	scrollbar-width: thin;
+	scrollbar-border-radius: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 85%;
+}
+
+.contentTable2 {
+	margin-right: auto;
+	margin-left: auto;
+	width: 85%;
+	max-height: 200px;
+	overflow-y: scroll;
+}
+
+.contentDiv {
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+}
+
+.contentParagraph {
+	max-height: 200px;
+	overflow-y: scroll;
+	margin-right: auto;
+	margin-left: auto;
+	width: 85%;
+}
+
+.contentWrapper {
+	background-color: #107dac;
+	margin: 40px;
+}
+
+table thead tr {
+	background-color: #005073;
+}
+
+table thead tr th {
+	width: 200px;
+	text-align: center;
+}
+
+table {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #1ebbd7;
+}
+
+tr:first-child th:first-child {
+  border-top-left-radius: 6px;
+}
+tr:first-child th:last-child {
+  border-top-right-radius: 6px;
+}
+
+.fixed_header tbody {
+  max-height: 100px;
+  overflow-y: scroll;
+}
