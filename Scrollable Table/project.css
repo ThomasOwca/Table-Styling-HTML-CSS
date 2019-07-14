@@ -11,13 +11,13 @@ body {
 
 .contentWrapper2 {
 	padding: 30px;
+	border-radius: 10px;
 }
 
 .contentTable {
 	max-height: 200px;
 	overflow-y: scroll;
 	scrollbar-width: thin;
-	scrollbar-border-radius: 10px;
 	margin-right: auto;
 	margin-left: auto;
 	width: 85%;
@@ -48,9 +48,10 @@ body {
 .contentWrapper {
 	background-color: #107dac;
 	margin: 40px;
+	border-radius: 10px;
 }
 
-table thead tr {
+table thead th {
 	background-color: #005073;
 }
 
@@ -67,6 +68,10 @@ table {
 	border-spacing: 0;
 }
 
+table tbody tr:hover {
+	background-color: black;
+}
+
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
@@ -78,10 +83,10 @@ tr:nth-child(even) {
 }
 
 tr:first-child th:first-child {
-  border-top-left-radius: 6px;
+  border-top-left-radius: 8px;
 }
 tr:first-child th:last-child {
-  border-top-right-radius: 6px;
+  border-top-right-radius: 8px;
 }
 
 .fixed_header tbody {
