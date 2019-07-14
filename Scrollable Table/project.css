@@ -72,6 +72,18 @@ table tbody tr:hover {
 	background-color: black;
 }
 
+tr:nth-child(even) {
+	background-color: #1ebbd7;
+}
+  
+tr:first-child th:first-child {
+	border-top-left-radius: 8px;
+}
+
+tr:first-child th:last-child {
+	border-top-right-radius: 8px;
+}
+
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
@@ -83,14 +95,71 @@ td, th {
 	text-align: left;
 }
 
-tr:nth-child(even) {
-  background-color: #1ebbd7;
+.customTable2 thead tr:first-child th:first-child, .customTable2 thead tr:first-child th:last-child {
+	border-radius: 0;
 }
 
-tr:first-child th:first-child {
-  border-top-left-radius: 8px;
+/* The 3 following classes allow for a fixed column header with scrolling enabled. */
+/* -------------------------------------Start------------------------------------- */
+.customTable2 thead th {
+	position: -webkit-sticky; /* for Safari */
+	position: sticky;
+	top: 0;
+  }
+
+.customTable2 tbody th {
+	position: -webkit-sticky; /* for Safari */
+	position: sticky;
+	left: 0;
+  }
+  
+/* To have the header in the first column stick to the left: */
+  
+.customTable2 thead th:first-child {
+	left: 0;
+	z-index: 1;
 }
-tr:first-child th:last-child {
-  border-top-right-radius: 8px;
+/* -------------------------------------End---------------------------------------- */
+
+.search {
+	position: relative;
+	color: #aaa;
+	font-size: 16px;
+}
+  
+.search input {
+	width: 250px;
+	height: 32px;
+  
+	background: #fcfcfc;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+  
+.search input { text-indent: 32px; }
+
+.search .fa-search { 
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: lightslategrey;
+}
+
+/*  Google Chrome Scrollbar styling   */
+::-webkit-scrollbar {
+	width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	border-radius: 10px;
+	background-color: lightgray;
+	color: blue;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
